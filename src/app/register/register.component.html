@@ -1,0 +1,22 @@
+<form #customer="ngForm" (ngSubmit)="register(customer)"  >
+  <p>Name:</p>
+  <input type="text" ngModel name="name">
+  <p>Age:</p>
+  <input type="text" ngModel name="age">
+  <p>Address:</p>
+  <input type="text" ngModel name="address">
+  <button >Register</button>
+</form>
+//------------------------/
+<table *ngFor=" let customer of customers">
+  <tr>
+    <td>Name:</td>
+    <td>Age:</td>
+    <td>Address:</td>
+  </tr>
+  <tr >
+    <td>{{customer.name}}</td>
+    <td>{{customer.age}}</td>
+    <td>{{customer.address}}</td>
+  </tr>
+</table>
